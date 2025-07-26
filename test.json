@@ -1,0 +1,52 @@
+{
+    "1":{
+        "thought": "Thought 1",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "No you are not the only person that makes mistakes. It literally makes no sense. Even among your peer group you are not the only one that fucked up."
+    },
+    "2":{
+        "thought": "Thought 2",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "No you are not the only person that makes mistakes. It literally makes no sense. Even among your peer group you are not the only one that fucked up."
+    },
+    "3":{
+        "thought": "Thought 3",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I do things for the bravery"
+    },
+    "4":{
+        "thought": "Thought 4",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I'm glad that I programmed this"
+    },
+    "5":{
+        "thought": "Thought 5",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I'm glad that I programmed this"
+    },
+    "6":{
+        "thought": "Thought 6",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "No you are not the only person that makes mistakes. It literally makes no sense. Even among your peer group you are not the only one that fucked up."
+    },
+    "7":{
+        "thought": "Thought 7",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "No you are not the only person that makes mistakes. It literally makes no sense. Even among your peer group you are not the only one that fucked up."
+    },
+    "8":{
+        "thought": "Thought 8",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I do things for the bravery"
+    },
+    "9":{
+        "thought": "Thought 9",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I'm glad that I programmed this"
+    },
+    "10":{
+        "thought": "Thought 10",
+        "distortion": ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"],
+        "response": "I'm glad that I programmed this"
+    }
+}

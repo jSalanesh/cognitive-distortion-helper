@@ -1,11 +1,41 @@
 DISTORTION_LIST = ["All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"]
 import customtkinter
+import json
 
 app = customtkinter.CTk()
 app.geometry("800x500")
 app.title("Cognitive Distortion Helper")
 app.grid_columnconfigure(1,weight=1)
 app.grid_rowconfigure(0,weight=1)
+
+# Json retrieval function
+def get_from_json():
+    with open("test.json","r") as data_file:
+        data = json.load(data_file)
+        list_of_thoughts = []
+        list_of_distortions = []
+        list_of_responses = []
+        count = 1
+        for row in data:
+            retrieved_thought = data[row]["thought"]
+            retrieved_distortions = data[row]["distortion"]
+            retrieved_response = data[row]["response"]
+            retrieved_distortions = ", ".join(retrieved_distortions)
+            list_of_thoughts.append(customtkinter.CTkTextbox(view_frame))
+            list_of_thoughts[-1].insert("0.0",f"{retrieved_thought}")
+            list_of_thoughts[-1].configure(state="disabled")
+            list_of_thoughts[-1].grid(row=count,column=1,padx=10,pady=10)
+            list_of_distortions.append(customtkinter.CTkTextbox(view_frame))
+            list_of_distortions[-1].insert("0.0",f"{retrieved_distortions}")
+            list_of_distortions[-1].configure(state="disabled")
+            list_of_distortions[-1].grid(row=count,column=2,padx=10,pady=10)
+            list_of_responses.append(customtkinter.CTkTextbox(view_frame))
+            list_of_responses[-1].insert("0.0",f"{retrieved_response}")
+            list_of_responses[-1].configure(state="disabled")
+            list_of_responses[-1].grid(row=count,column=3,padx=10,pady=10)
+            count+=1
+        
+      
 
 # Grid placement functions
 def show_main_body():
@@ -29,9 +59,8 @@ def show_view_body():
     automatic_thought_header.grid(row=0,column=1,padx=10,pady=10)
     thought_distortions.grid(row=0,column=2,padx=10,pady=10)
     rational_response_header.grid(row=0,column=3,padx=10,pady=10)
-    da_thought.grid(row=1,column=1,padx=10,pady=10)
-    da_distortions.grid(row=1,column=2,padx=10,pady=10)
-    da_response.grid(row=1,column=3,padx=10,pady=10)
+    get_from_json()
+    
     
     
 # SIDEBAR
@@ -88,15 +117,6 @@ thought_distortions = customtkinter.CTkLabel(view_frame,text="THOUGHT DISTORTION
 rational_response_header = customtkinter.CTkLabel(view_frame,text="RATIONAL RESPONSE")
 expand_header = customtkinter.CTkLabel(view_frame,text="EXPAND")
 
-da_thought = customtkinter.CTkTextbox(view_frame)
-da_thought.insert("0.0","I'm the only one who makes mistakes.")
-da_thought.configure(state="disabled")
-da_distortions = customtkinter.CTkTextbox(view_frame)
-da_distortions.insert("0.0",'All or Nothing Thinking","Overgeneralization","Mental Filter","Disqualifying the Positive","Jumping to Conclusions","Magnification and Minimization","Emotional Reasoning","Should Statements","Labelling and Mislabelling","Personalization"')
-da_distortions.configure(state="disabled")
-da_response = customtkinter.CTkTextbox(view_frame)
-da_response.insert("0.0",'No you are not the only person that makes mistakes. It literally makes no sense. Even among your peer group you are not the only one that fucked up.')
-da_response.configure(state="disabled")
 
 
 
