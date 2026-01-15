@@ -61,7 +61,15 @@ def show_view_body():
     rational_response_header.grid(row=0,column=3,padx=10,pady=10)
     get_from_json()
     
+def save_distortion():
+    # I could have sworn that I could check if specific checkboxes were clicked before saving
+    # Anycase this program is done. It can read from the json file but can't add anything new
+    # Need OOP shit to make this work because the checkboxes are inside another function
     
+    print(automatic_thought.get("0.0","end"))
+    print(rational_response.get("0.0","end"))
+
+
     
 # SIDEBAR
 sidebar = customtkinter.CTkFrame(master=app)
@@ -106,7 +114,7 @@ rational_response_label = customtkinter.CTkLabel(main_body,text="Rational Respon
 rational_response = customtkinter.CTkTextbox(main_body)
 
 # SAVE BUTTON
-save_button = customtkinter.CTkButton(main_body,text="Save")
+save_button = customtkinter.CTkButton(main_body,text="Save",command=save_distortion)
 
 # VIEW FRAME
 view_frame = customtkinter.CTkScrollableFrame(app)
